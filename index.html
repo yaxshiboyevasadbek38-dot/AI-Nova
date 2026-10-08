@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova AI — AI Yordamchi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">✦</div>
+                <div>
+                    <h2>Nova AI</h2>
+                    <span>AI Yordamchi</span>
+                </div>
+            </div>
+
+            <button class="new-chat" id="newChat">
+                <span>＋</span> Yangi suhbat
+            </button>
+
+            <div class="sidebar-title">Suhbatlar</div>
+
+            <div class="chat-history" id="chatHistory">
+                <div class="history-item active">
+                    <span>💬</span>
+                    <p>Yangi suhbat</p>
+                </div>
+            </div>
+
+            <div class="sidebar-bottom">
+                <button class="side-btn">
+                    ⚙️ <span>Sozlamalar</span>
+                </button>
+
+                <div class="user-card">
+                    <div class="avatar">U</div>
+                    <div>
+                        <strong>Foydalanuvchi</strong>
+                        <small>Free account</small>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="main">
+
+            <!-- Header -->
+            <header class="header">
+                <div>
+                    <h1>Nova AI</h1>
+                    <div class="status">
+                        <span class="online"></span>
+                        Online
+                    </div>
+                </div>
+
+                <button class="theme-btn" id="themeBtn">☀️</button>
+            </header>
+
+            <!-- Chat -->
+            <section class="chat-container" id="chatContainer">
+
+                <!-- Welcome -->
+                <div class="welcome" id="welcome">
+                    <div class="big-logo">✦</div>
+
+                    <h2>Salom! Men Nova 👋</h2>
+
+                    <p>
+                        Men senga g‘oya topish, kod yozish,
+                        o‘qish va kundalik vazifalarda yordam beraman.
+                    </p>
+
+                    <div class="suggestions">
+                        <button class="suggestion">
+                            💡 <span>Sayt uchun g‘oya ber</span>
+                        </button>
+
+                        <button class="suggestion">
+                            💻 <span>HTML kod yozib ber</span>
+                        </button>
+
+                        <button class="suggestion">
+                            📚 <span>Menga JavaScript o‘rgat</span>
+                        </button>
+
+                        <button class="suggestion">
+                            🚀 <span>Startup g‘oyasi kerak</span>
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Input -->
+            <div class="input-area">
+
+                <div class="input-box">
+
+                    <button class="attach-btn" id="attachBtn">
+                        📎
+                    </button>
+
+                    <textarea
+                        id="messageInput"
+                        placeholder="Nova'ga xabar yozing..."
+                        rows="1"
+                    ></textarea>
+
+                    <button class="send-btn" id="sendBtn">
+                        ➤
+                    </button>
+
+                </div>
+
+                <p class="disclaimer">
+                    Nova AI xatolarga yo‘l qo‘yishi mumkin. Muhim ma'lumotlarni tekshiring.
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
